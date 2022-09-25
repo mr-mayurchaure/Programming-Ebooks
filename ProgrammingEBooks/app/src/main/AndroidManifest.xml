@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mayurchaure.programmingebooks">
+
+    <supports-screens android:resizeable="true" />
+    <supports-screens android:smallScreens="true" />
+    <supports-screens android:normalScreens="true" />
+    <supports-screens android:largeScreens="true" />
+    <supports-screens android:anyDensity="true" />
+    <supports-screens android:requiresSmallestWidthDp="600" />
+    <supports-screens android:requiresSmallestWidthDp="420" />
+    <supports-screens android:requiresSmallestWidthDp="440" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ProgrammingEBooks">
+        <activity
+            android:name=".Menu.SwiftActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Menu.RubyActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Menu.Rispberry_piActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Menu.MatlabActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Menu.LinuxActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Menu.ISOActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Menu.FrontendActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Menu.BackendActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Menu.CMSActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Menu.ArduinoActivity"
+            android:exported="true" />
+        <activity android:name=".PDFShow.PDFActivity" />
+        <activity android:name=".Menu.PythonActivity" />
+        <activity android:name=".Menu.JavaActivity" />
+        <activity android:name=".Menu.DatabaseActivity" />
+        <activity android:name=".Menu.CsharpActivity" />
+        <activity android:name=".Menu.CplusplusActivity" />
+        <activity android:name=".Menu.AndroidActivity" />
+        <activity android:name=".Menu.CActivity" />
+        <activity android:name=".Menu.AlgorithumActivity" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DashboardActivity" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-2954603769166560~1746630354"/>
+
+    </application>
+
+</manifest>
